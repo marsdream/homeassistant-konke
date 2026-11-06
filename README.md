@@ -1,8 +1,22 @@
 # Home Assistant 控客小K 集成
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=flat&logo=home-assistant&logoColor=white)](https://github.com/marsdream/homeassistant-konke)
+[![HA Version](https://img.shields.io/badge/Home%20Assistant-2024.4%2B-41BDF5.svg?style=flat&logo=home-assistant&logoColor=white)](https://www.home-assistant.io)
+[![License](https://img.shields.io/badge/License-Apache%202.0-D22128.svg?style=flat&logo=apache&logoColor=white)](LICENSE)
+[![Support on Ko-fi](https://img.shields.io/badge/Support%20on-Ko--fi-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/aitoken)
+[![GitHub Release](https://img.shields.io/github/v/release/marsdream/homeassistant-konke?label=release)](https://github.com/marsdream/homeassistant-konke/releases)
+
 把**控客（Konke）小K 智能插座**接入 Home Assistant，完全走**本地局域网协议**，不需要控客 App、不需要注册账号、不需要云端。
 
 ![Mini K](docs/images/mini-k.png)
+
+<p align="center">
+  <a href="https://github.com/marsdream/homeassistant-konke"><img src="docs/images/hacs-install.png" alt="一键安装 via HACS" width="320" /></a>
+</p>
+
+<p align="center">
+  <sub>点上面按钮 → 在 HACS 里添加自定义仓库 <code>https://github.com/marsdream/homeassistant-konke</code> → 搜「控客」→ 下载 → 重启 HA</sub>
+</p>
 
 ## 为什么做这个
 
@@ -139,6 +153,14 @@ close#<hardware-version>#<software-version>#hack
 ## License
 
 [Apache License 2.0](LICENSE)
+
+## 支持我
+
+这个集成是纯开源、免费的，没有广告也没有付费墙。如果你觉得它帮你救回了一台老设备，欢迎请我喝杯咖啡 —— 所有赞助都会用在买新硬件和折腾新项目上。
+
+<p align="center">
+  <a href="https://ko-fi.com/aitoken"><img src="https://img.shields.io/badge/Support%20on-Ko--fi-FF5E5B?logo=ko-fi&logoColor=white&style=for-the-badge" alt="Support on Ko-fi" height="42" /></a>
+</p>
 
 ---
 
