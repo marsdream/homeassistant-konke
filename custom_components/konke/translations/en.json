@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Konke outlet",
+        "description": "Enter the IP address of the Konke outlet on your local network.",
+        "data": {
+          "host": "IP address",
+          "model": "Model",
+          "name": "Name",
+          "area": "Room"
+        },
+        "data_description": {
+          "host": "For example 192.168.1.100",
+          "model": "Choose minik for Mini K / Mini Pro",
+          "name": "Leave empty for an automatic name",
+          "area": "The room this device belongs to"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "device_not_found": "No response from the device. Check the IP address and make sure the device is connected.",
+      "device_offline": "The device is offline. Make sure the outlet is powered and on the same network.",
+      "unsupported_model": "Unsupported model. Please pick a different one."
+    },
+    "abort": {
+      "already_configured": "This device is already configured"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+Home Assistant 控客小K (Konke) integration
+Copyright 2026 marsdream
+
+This product includes software developed as part of the Konke Home Assistant
+community effort, originally based on:
+
+  5high/konke — https://github.com/5high/konke
+  Copyright 2020 5high and contributors
+  Licensed under the Apache License, Version 2.0
+
+  jedmeng/homeassistant-konke — https://github.com/jedmeng/homeassistant-konke
+  Licensed under the Apache License, Version 2.0
+
+The protocol implementation relies on:
+
+  pykonkeio — https://pypi.org/project/pykonkeio/
+  Copyright jedmeng, MIT License
+
+This integration is distributed under the Apache License, Version 2.0.
+See the LICENSE file for the full license text.

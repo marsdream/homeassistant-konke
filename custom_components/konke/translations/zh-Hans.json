@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "控客小K",
+        "description": "填写控客插座在局域网中的 IP 地址。",
+        "data": {
+          "host": "IP 地址",
+          "model": "型号",
+          "name": "名称",
+          "area": "房间"
+        },
+        "data_description": {
+          "host": "例如 192.168.1.100",
+          "model": "小K / 小K Pro 选 minik",
+          "name": "留空则自动命名",
+          "area": "选择设备所在的房间"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "连接失败",
+      "device_not_found": "设备无响应，请检查 IP 地址是否正确、设备是否已联网",
+      "device_offline": "设备离线，请确认插座已通电并在同一局域网",
+      "unsupported_model": "不支持该型号，请更换型号后重试"
+    },
+    "abort": {
+      "already_configured": "该设备已经添加过了"
+    }
+  }
+}

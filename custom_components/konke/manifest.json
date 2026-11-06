@@ -1,0 +1,12 @@
+{
+  "domain": "konke",
+  "name": "控客小K",
+  "version": "2.0.0",
+  "documentation": "https://github.com/marsdream/homeassistant-konke",
+  "issue_tracker": "https://github.com/marsdream/homeassistant-konke/issues",
+  "dependencies": [],
+  "codeowners": ["@marsdream"],
+  "requirements": ["pykonkeio==2.1.7"],
+  "config_flow": true,
+  "iot_class": "local_polling"
+}
