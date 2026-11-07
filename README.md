@@ -8,10 +8,10 @@
 
 把**控客（Konke）小K 智能插座**接入 Home Assistant，完全走**本地局域网协议**，不需要控客 App、不需要注册账号、不需要云端。
 
-![Mini K](docs/images/mini-k.png)
+![Mini K](https://cdn.jsdelivr.net/gh/marsdream/homeassistant-konke@main/docs/images/mini-k.png)
 
 <p align="center">
-  <a href="https://github.com/marsdream/homeassistant-konke"><img src="docs/images/hacs-install.png" alt="一键安装 via HACS" width="320" /></a>
+  <a href="https://github.com/marsdream/homeassistant-konke"><img src="https://cdn.jsdelivr.net/gh/marsdream/homeassistant-konke@main/docs/images/hacs-install.png" alt="一键安装 via HACS" width="320" /></a>
 </p>
 
 <p align="center">
@@ -167,7 +167,7 @@ close#<hardware-version>#<software-version>#hack
 ## 更多
 
 <p align="center">
-  <a href="https://osp.io"><img src="docs/images/osp.io-logo.png" alt="开源派 osp.io" width="96" /></a>
+  <a href="https://osp.io"><img src="https://cdn.jsdelivr.net/gh/marsdream/homeassistant-konke@main/docs/images/osp.io-logo.png" alt="开源派 osp.io" width="96" /></a>
 </p>
 
 <p align="center">
