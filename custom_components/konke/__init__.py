@@ -65,9 +65,18 @@ async def async_setup_entry(hass: HomeAssistant, entry: KonkeConfigEntry) -> boo
         connections={(dr.CONNECTION_NETWORK_MAC, format_mac(mac))} if mac else None,
         suggested_area=area_id,
     )
-    # suggested_area only nudges the UI; set the room explicitly so the device
-    # lands in the chosen area right away.
-    if area_id and device.area_id != area_id:
+    # suggested_area 只在设备「首次创建」时生效，已存在的设备不会被覆盖
+    # （见 homeassistant/helpers/device_registry.py 的 _async_get_or_create：
+    #   suggested_area 仅在新建分支里用来 async_get_or_create 区域）。
+    #
+    # 曾经这里还有一刀「强制刷回配置项里的 area」：
+    #     if area_id and device.area_id != area_id:
+    #         device = registry.async_update_device(device.id, area_id=area_id)
+    # 但它无法区分「设备还没落位」和「用户在 UI 里手动改过房间」，于是每次
+    # HA 重启都会把用户刚拖到别的房间的设备强行拽回配置的默认房间。
+    #
+    # 现在只在设备「完全没有区域」时才补一次，之后完全尊重用户在 UI 的选择。
+    if area_id and device.area_id is None:
         device = registry.async_update_device(device.id, area_id=area_id)
     hass.data[DOMAIN][entry.entry_id] = device
     _LOGGER.info(
